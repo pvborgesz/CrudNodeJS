@@ -78,7 +78,7 @@ router.post("/forgot_password", async (req, res) => {
         // console.log(token, now);
         mailer.sendMail({
             to: email,
-            from: "b18162aae8-1d9969@inbox.mailtrap.io",
+            from: "testenodemailerpv@gmail.com",
             template: "auth/forgot_password",
             context: { token }
         }, (err) => {
@@ -98,3 +98,4 @@ router.post("/forgot_password", async (req, res) => {
 module.exports = app => {
     app.use("/auth", router);
 }
+
